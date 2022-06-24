@@ -1,13 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
 interface task{
   name: string
   age: string
   count: string
 }
+
 @Injectable()
 export class CaioListService {
-  site='https://api.agify.io/';
+  site='https://api.agify.io/?name=bella';
   list='';
   constructor(private http: HttpClient) { }
 
