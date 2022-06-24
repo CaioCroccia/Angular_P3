@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { CaioHomeComponent } from './caio-home/caio-home.component';
+import { CaioListComponent } from './caio-list/caio-list.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  imports:      [ BrowserModule, FormsModule,RouterModule.forRoot([
+    {path: '', component: CaioHomeComponent},
+    {path: 'list', component: CaioListComponent}
+  ]) ],
+  declarations: [ AppComponent, HelloComponent, CaioHomeComponent, CaioListComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
