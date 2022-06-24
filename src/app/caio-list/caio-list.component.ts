@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CaioListService } from '../caio-list.service';
 
 @Component({
   selector: 'app-caio-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaioListComponent implements OnInit {
 
-  constructor() { }
+  constructor(public lista: CaioListService) { }
 
   ngOnInit() {
   }
