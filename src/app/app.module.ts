@@ -8,10 +8,10 @@ import { CaioHomeComponent } from './caio-home/caio-home.component';
 import { CaioListComponent } from './caio-list/caio-list.component';
 import { RouterModule } from '@angular/router';
 import { CaioListService } from './caio-list.service';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  imports:      [ BrowserModule, HttpClient,FormsModule,RouterModule.forRoot([
+  imports:      [ BrowserModule, HttpClientModule,FormsModule,RouterModule.forRoot([
     {path: '', component: CaioHomeComponent},
     {path: 'list', component: CaioListComponent}
   ]) ],
