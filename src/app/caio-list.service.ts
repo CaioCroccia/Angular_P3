@@ -16,7 +16,7 @@ export class CaioListService {
   getDados(){
     this.http.get<any>('https://api.agify.io/?name=bella').subscribe((data) => {
       this.list = data;
-      console.log(data);
+      
   })
   }
 }
