@@ -1,13 +1,13 @@
 <h2>Dados</h2>
-<ul *ngFor="let item of lista.list">
+<ul *ngFor="let item of list">
   <li> 
-    {{item['name']}}
+    {{item.name}}
   </li>
   <li> 
-    {{item['age']}}
+    {{item.age}}
   </li>
   <li> 
-    {{item['count']}}
+    {{item.count}}
   </li>
 </ul>
-<button (click)="lista.getDados()">apareca</button>
+

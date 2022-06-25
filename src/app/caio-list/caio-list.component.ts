@@ -7,10 +7,11 @@ import { CaioListService } from '../caio-list.service';
   styleUrls: ['./caio-list.component.css']
 })
 export class CaioListComponent implements OnInit {
-
-  constructor(public lista: CaioListService) { }
+  list = <any>[];
+  constructor(public ListService: CaioListService) { }
  
   ngOnInit() {
+    this.ListService.getDados();
   }
 
 }
